@@ -131,7 +131,7 @@ img {
 .header-item {
   margin-right: 10px;
   align-items: center;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
 }
 
 .contacts-link:hover,
