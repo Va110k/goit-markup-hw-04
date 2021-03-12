@@ -29,8 +29,18 @@
                 </ul>
            
                 <ul class="contacts list">
-                    <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-                    <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="item"><a href="mailto:info@devstudio.com" class="contacts-link">
+                        <svg class="header-item" width="16px" height="12px">
+                            <use href="./images/sprite.svg#envelop"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                    </li>
+                    <li class="item"><a href="tel:+380961111111" class="contacts-link">
+                        <svg class="header-item" width="10px" height="16px">
+                            <use href="./images/sprite.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -48,11 +58,19 @@
             <section class="features section container" >
                 <h2 class="visually-hidden">Особенности</h2>
                     <ul class="features-list list">
-                        <li class="item icon-group">
-                            <h3 class="title">Внимание к деталям</h3>
-                            <p class="desc">Идейные соображения, а также начало повседневной
-                            работы по формированию позиции.</p>
-                        </li>
+                        
+                            <li class="item">
+                                <div class="icon-group">
+                                    <svg width="70" height="70">
+                                        <use href="./images/sprite.svg#group"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="title">Внимание к деталям</h3>
+                                <p class="desc">Идейные соображения, а также начало повседневной
+                                    работы по формированию позиции.</p>
+                            </li>
+                        
+                        
                         <li class="item icon-clock">
                             <h3 class="title">Пунктуальность</h3>
                             <p class="desc">Задача организации, в особенности же рамки и 
@@ -147,9 +165,12 @@
                     <ul class="clients-list list">
                         <li class="item">
                             <div>
-                                <svg>
-                                    <use href=""></use>
+                                <a href="">
+                                <svg class="client-item" width="45" height="50">
+                                    <use href="./images/sprite.svg#logo1"></use>
                                 </svg> 
+                                </a>
+                                <!-- svg.some-icon>use[href] -->
                             </div>
                         </li>
                     </ul>
