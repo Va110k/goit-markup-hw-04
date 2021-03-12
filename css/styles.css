@@ -236,14 +236,14 @@ img {
 }
 
 .icon-group {
-  width: 270px;
   height: 120px;
-  display: flex;
-  /* background-repeat: no-repeat;
-  background-position: center; */
   background-color: var(--secondary-background-color);
+
   margin-bottom: 30px;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .specialization {
