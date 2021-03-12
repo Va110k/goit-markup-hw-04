@@ -342,6 +342,16 @@ img {
   cursor: pointer;
 }
 
+/* клиенты */
+
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
 /* Портфолио */
 
 .filter-list {
