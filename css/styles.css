@@ -294,12 +294,12 @@ img {
 }
 
 .team .position {
-  margin-bottom: 30px;
-
   color: var(--secondary-text-color);
 
   font-size: 16px;
   line-height: 1.19;
+
+  margin-bottom: 16px;
 }
 
 .team-list .content {
@@ -324,6 +324,23 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.team .icon-list {
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.team-icons {
+  fill: var(--secondary-text-color);
+}
+
+.icon-link:focus .icons-group,
+.icon-link:hover .icons-group,
+icon-link:focus .team-icons,
+.icon-link:hover .team-icons {
+  fill: var(--primary-background-color);
+  background-color: var(--accent-color);
 }
 
 /* Фокус */
@@ -492,9 +509,17 @@ img {
   background-color: var(--header-footer-background-color);
 }
 
+.footer .container {
+  display: flex;
+}
+
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-section {
+  margin-right: 70px;
 }
 
 .footer .adress {
@@ -502,7 +527,15 @@ img {
 }
 
 .footer-link {
-  color: rgba(255, 255, 255, 60);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71em;
+  color: var(--secondary-background-color);
+}
+
+.adress-list .mail,
+.adress-list .tel {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-logo {
@@ -527,4 +560,24 @@ img {
 
 .adress-list .item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.invite {
+  color: var(--primary-background-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer .icons-group {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-icons {
+  fill: var(--primary-background-color);
+}
+
+.footer-wrapper {
+  padding-top: 72px;
 }
