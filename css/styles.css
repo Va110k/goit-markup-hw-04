@@ -117,7 +117,7 @@ img {
 
 .contacts-link {
   display: flex;
-  text-align: center;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -306,11 +306,27 @@ img {
   text-align: center;
 }
 
-/* акцент */
-/* .header-item:hover,
-.header-item:focus {
-  fill: var(--accent-color);
-} */
+.icon-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+}
+
+.icon-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-link .icons-group {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* Фокус */
 
 .link:hover,
 .link:focus {
@@ -345,9 +361,38 @@ img {
 
 /* клиенты */
 
-.client-list {
+.clients-list {
   display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+
+.client-link {
+  color: #afb1b8;
+}
+
+.clients-group {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  /* margin-right: 30px; */
   justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
+.client-link:hover .clients-group {
+  border: 1px solid var(--accent-color);
 }
 
 /* Портфолио */
